@@ -1,0 +1,99 @@
+#clients {
+    background-color: whitesmoke;
+
+    .container-flex {
+        padding: $section-padding 0;
+
+        @media(max-width: 992px) {
+            padding-bottom: 60px;
+        }
+
+        .row {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                border-radius: 50%;
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+                margin-bottom: $element-margin;
+            }
+
+            h3 {
+                margin: 10px 0 $element-margin 0;
+                font-weight: normal;
+            }
+
+            i {
+                font-size: 40px;
+                color: grey;
+                margin-bottom: $element-margin;
+            }
+
+            p {
+                color: grey;
+            }
+        }
+    }  
+}
+
+// CAROUSEL 
+
+html {
+    overflow-x: hidden;
+}
+
+.main-carousel {
+    width: 100%;
+    height: 500px;
+    outline: none;
+
+    .carousel-cell {
+        width: 100%;
+    }
+
+    // BUTTONS
+
+    .flickity-prev-next-button {
+        width: 100px;
+        height: 100px;
+        background: transparent;
+    }
+
+    .flickity-prev-next-button .arrow {
+        fill: grey;
+    }
+    .flickity-prev-next-button.no-svg {
+        color: grey;
+    }
+    .flickity-prev-next-button:hover {
+        background: transparent;
+    }
+
+    .flickity-prev-next-button:disabled {
+        display: none;
+    }
+
+    // DOTS
+
+    .flickity-page-dots {
+            margin-bottom: $element-margin;
+
+            @media(max-width: 992px) {
+                margin-bottom: 0;
+            }
+
+        li {
+            border: 2px solid $main-color;
+            background-color: transparent;
+            height: 13px;
+            width: 13px;
+        }
+
+        li.dot.is-selected {
+            background-color: $main-color;
+        }
+    }
+
+}

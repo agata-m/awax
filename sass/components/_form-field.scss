@@ -1,0 +1,32 @@
+label {
+    text-transform: uppercase;
+    color: rgb(200, 200, 200);
+    margin-top: $element-margin;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 15px;
+    width: 100%;
+    z-index: 2;
+}
+
+.double-input {
+    display: flex;
+    justify-content: space-between !important;
+
+    .input-left, .input-right {
+        width: 47%;
+    }
+
+    #label-email {
+        right: -65px;
+    }
+}

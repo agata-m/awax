@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $main-dark-color;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*
+* === GRID ===
+*/
+
+[class*="col-"] {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin grid($prefix) {
+    @for $i from 1 through 12 {
+        .col-#{$prefix}-#{$i} {
+            $width: 100% / 12 * $i;
+            flex: 0 0 $width;
+            max-width: $width;
+        }
+
+        .col-offset-#{$prefix}-#{$i} {
+            $margin-left: 100% / 12 * $i;
+            margin-left: $margin-left;
+        }
+    }
+}
+
+/*
+* === media queries GRID ===
+*/
+
+@media(max-width: 992px) {
+    @include grid('sm');
+}
+
+@media(min-width: 993px) {
+    @include grid('lg');
+}

@@ -1,0 +1,68 @@
+#footnote {
+    position: relative;
+    padding-top: $section-padding;
+    
+    .container-flex {
+
+        color: white;
+        flex-direction: row;
+        margin-bottom: $section-margin;
+
+        @media(max-width: 992px) {
+            flex-direction: column;
+            padding-top: $element-padding;
+        }
+
+        .row:first-of-type {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .icon-row {
+            display: flex;
+            align-self: flex-start;
+    
+            .icon-bubble {
+                background-color: rgb(100, 100, 100);
+
+                &:hover {
+                    background-color: $main-color;
+                }
+            }
+        }
+    
+        .awax {
+            font-weight: bold;
+            align-self: flex-end;
+        }
+
+        .pudding {
+            text-align: justify;
+            line-height: $line-height;
+            font-size: 14px;
+            color: rgb(200, 200, 200);
+            @media(max-width: 992px) {
+                margin-top: $element-margin;
+            }
+        }
+
+        .shadow-box {
+            background-color: rgba(245, 245, 245, 0.2);
+            border-radius: 5px;
+            width: 100%;
+            margin-left: 20px;
+            padding: $element-padding;
+            position: relative;
+
+            @media(max-width: 992px) {
+                margin: $element-margin 0 0 0;
+            }
+
+            label {
+                top: 0;
+                right: 0;
+                left: 0;
+            }
+        }
+    }
+}

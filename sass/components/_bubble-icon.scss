@@ -1,0 +1,47 @@
+.icon-bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: rgb(200, 200, 200);
+    color: white;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $main-color;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+    i {
+        font-size: 18px;
+    }
+}
+
+.side-icon {
+    background-color: $main-color;
+    height: 60px;
+    width: 60px;
+    box-shadow: 2px 2px 2px 1px grey;
+    position: absolute;
+    top: -30px;
+
+    i {
+        font-size: 35px;
+    }
+
+    &.icon-right {
+        right: 10px;
+    }
+
+    &.icon-left {
+        left: 10px;
+    }
+}

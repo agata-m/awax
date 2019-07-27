@@ -1,0 +1,13 @@
+#facts {
+    padding: $section-padding $element-padding;
+
+    .row {
+        justify-content: center;
+
+        .headings {
+            h1 {
+                color: white;
+            }
+        }
+    }
+}

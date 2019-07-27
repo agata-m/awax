@@ -1,0 +1,23 @@
+#contact-us {
+    background-color: whitesmoke;
+
+    .container-flex {
+        padding: $section-padding 0;
+        
+        .row {
+            justify-content: center;
+        }
+
+        form {
+            .row {
+                display: flex;
+                position: relative;
+
+                &:last-of-type {
+                    margin-top: $section-margin;
+                }
+            }
+        }
+    }
+    
+}

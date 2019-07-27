@@ -1,0 +1,45 @@
+#premium {
+    background-color: white;
+    padding: $section-padding 0;
+    
+    .container-flex {
+        align-items: center;
+
+        .row {
+            margin-bottom: $element-margin;
+        }
+
+        img {
+            width: 100%;
+            @media(max-width: 992px) {
+                margin-bottom: $section-margin;
+            }
+        }
+        
+        i {
+            color: $main-color;
+            font-size: 30px;
+            margin-right: 10px;
+        }
+    
+        h4 {
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+    
+        p {
+            color: grey;
+            margin: 5px 0;
+            line-height: $line-height;
+            text-align: left;
+        }
+
+        li {
+            color: grey;
+            text-transform: uppercase;
+            line-height: $line-height;
+            text-align: left;
+            list-style: none;
+        }
+    }
+}

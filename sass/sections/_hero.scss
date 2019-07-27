@@ -1,0 +1,40 @@
+#hero {
+    text-align: center;
+    color: white;
+    background-image: url(https://images.pexels.com/photos/1498964/pexels-photo-1498964.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 600px;
+
+    .bgr-layer {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        .container-flex {
+            padding: 0 20px;
+        }
+
+        h1 {
+            margin-top: 150px;
+            margin-bottom: 0;
+            font-size: 60px;
+        }
+    
+        .colored {
+            margin-top: 0;
+            color: $main-color;
+    
+        }
+    
+        h3 {
+            font-size: 25px;
+            margin: 20px;
+    
+        }
+    }
+}

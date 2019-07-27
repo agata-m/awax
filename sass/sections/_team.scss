@@ -1,0 +1,47 @@
+#team {
+    padding: $section-padding 0;
+    background-image: url(https://images.pexels.com/photos/887836/pexels-photo-887836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+
+    .row {
+        justify-content: center;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    .white-board-row {
+        justify-content: space-between;
+    }
+
+    .white-board {
+        background-color: whitesmoke;
+        border-radius: 5px;
+        padding: 50px $element-padding;
+
+        @media(max-width: 992px) {
+            border: none;
+            margin: $element-margin;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 40px 0 10px 0;
+        }
+
+        .icon-row {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+    }
+}
